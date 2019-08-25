@@ -1,5 +1,3 @@
-Standard fish entry ![Standard Fish Entry](scribblings/sf.png)
-
 # Tessellation: A library for aiding in the creation of Tessellated Geometric Patterns
 
 ![Example of tessellation](scribblings/example1.png)
@@ -69,4 +67,6 @@ Here are some more points to take note of:
 
 The final result is as follows:
 
-![scribblings/final.png]
+![final product](scribblings/final.png)
+
+Standard fish entry ![Standard Fish Entry](scribblings/sf.png)
