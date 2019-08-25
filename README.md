@@ -1,7 +1,8 @@
 # Tessellation: A library for aiding in the creation of tessellated geometric patterns
 
 ![Example of tessellation](scribblings/example1.png)
-Standard fish entry ![Standard Fish Entry](scribblings/sf.png)
+
+Standard fish entry ![Standard Fish Entry](scribblings/sf.png). Code can be found in example1.rkt.
 
 Tessellation is a library on top of the Racket Metapict library for creating geometric patterns.  You can watch [this](https://www.youtube.com/watch?v=pg1NpMmPv48) to get an idea of how this library works. 
 
