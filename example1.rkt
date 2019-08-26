@@ -13,7 +13,7 @@
   (curve (pt 1 1) .. (pt 1 -1))
   (curve (pt -1 -1) .. (pt 1 -1))
 
-  (rotate90 (hmirror (vmirror (curve (med -1 a q) .. q))))
+  (rotate90 (hmirror (vmirror (curve (med -1 a l) .. l))))
   
   (curve (pt 0 -1) .. (pt 0 1))
   (curve (pt -1 0) .. (pt 1 0))))
@@ -26,7 +26,7 @@
         (cornsilk (make-color* #xFF #xF6 #xDC))
         (deep-taupe (make-color* #x7A #x62 #x63))
         (brown (make-color* #xE4 #xB7 #x47))
-        (inner-star (with-grid g (curve aq -- am -- v -- ai -- ah -- al -- w -- ag -- aj -- an -- u -- ak -- ap -- ao -- x -- ar -- cycle))))
+        (inner-star (with-grid g (curve ak -- ag -- p -- ac -- ab -- af -- q -- aa -- ad -- ah -- o -- ae -- aj -- ai -- r -- al -- cycle))))
     
     (draw
      ;; The stars around the center.
@@ -41,24 +41,24 @@
      ;; The background.
      (color cornsilk
             (tessellate g 3 3
-                        (fill (rotate90 (hmirror (vmirror (curve ab -- a -- ai -- k -- cycle)))))))
+                        (fill (rotate90 (hmirror (vmirror (curve v -- a -- ac -- i -- cycle)))))))
 
      ;; The lower, dark wire frame.
      (color deep-taupe
             (penwidth 20
                       (tessellate g 3 3
-                                  (curve v -- k -- w -- q -- u -- t -- x -- f -- v)
-                                  (rotate/4 (curve ab -- aq -- af)))))
+                                  (curve p -- i -- q -- l -- o -- n -- r -- f -- p)
+                                  (rotate/4 (curve v -- ak -- z)))))
 
      ;; Divede the lower frame into two.
      (color "white"
             (penwidth 3
                       (tessellate g 3 3
-                                  (curve v -- k -- w -- q -- u -- t -- x -- f -- v)
-                                  (rotate/4 (curve ab -- aq -- af)))))
+                                  (curve p -- i -- q -- l -- o -- n -- r -- f -- p)
+                                  (rotate/4 (curve v -- ak -- z)))))
 
      ;; The golden frame on top.
      (penwidth 6 (color brown
                         (tessellate g 3 3
                                     inner-star
-                                    (vmirror (hmirror (curve h -- v)))))))))
+                                    (vmirror (hmirror (curve g -- p)))))))))
