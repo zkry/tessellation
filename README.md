@@ -6,6 +6,10 @@ Standard fish entry ![Standard Fish Entry](scribblings/sf.png). Code can be foun
 
 Tessellation is a library on top of the Racket Metapict library for creating geometric patterns.  You can watch [this](https://www.youtube.com/watch?v=pg1NpMmPv48) to get an idea of how this library works. 
 
+## Usage
+
+Currently this package has not been uploaded. I will update this README when it is but for the time being if you want to use this you can just copy and require the "tessellation.rkt" file. Also make sure you have https://github.com/soegaard/metapict installed.
+
 ## How the Library Works
 
 The way to define patterns with this library has two parts, first you create the underlying grid, then you specify the design you want, using said grid. Let's walk through a simple example. First we'll define the underlying grid via the following code:
