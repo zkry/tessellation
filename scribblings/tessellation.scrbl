@@ -75,7 +75,7 @@ Simmilar to the Xmirror and rotate/X functions, these take a list of curves and 
 
 Below is an example of what can be built with this library:
 
-@image{example1.png}
+@image{scribblings/example1.png}
 
 The code to generate this is as follows:
 

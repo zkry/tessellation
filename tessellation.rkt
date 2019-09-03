@@ -143,12 +143,17 @@
              (shapes '()))
          (let* ((processed-curves (flatten (process-curve points curve)))
                 (new-points (for*/fold ([pt-acc '()])
+                                       ;; Compare every shape with every other shape
                                        ([i (append shapes processed-curves)]
                                         [j (flatten (list processed-curves))])
-                              (if (equal? i j)
-                                  pt-acc
+                              (if (equal? i j) ; If the shape is being compared with itself,
+                                  pt-acc       ; skip it.
+
+                                  ;; Calculate the intersections of shapes i and j, then deduplicate the points
+                                  ;; and add it to the accumulated list.
                                   (let ((next-pts (pt-deduplicate (intersection-points i j) pt-acc)))
                                     (append pt-acc next-pts))))))
+           
            (set! points (append points (pt-deduplicate new-points points)))
            (set! shapes (append shapes (flatten processed-curves)))) ...
         (base-grid points shapes))]))
