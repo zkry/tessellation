@@ -75,4 +75,4 @@ The final result is as follows:
 
 ## Installation
 
-Currently this package has not been uploaded. I will update this README when it is but for the time being if you want to use this you can just copy and require the "tessellation.rkt" file. Also make sure you have https://github.com/soegaard/metapict installed.  If you are having problems, make sure that metapict is at it's most recent version.
+To use this package you can install it from the racket packet server at https://pkgs.racket-lang.org/package/tessellation . This packet depends on the metapict library (https://github.com/soegaard/metapict) and should work with the latest version.
